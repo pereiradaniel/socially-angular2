@@ -1,4 +1,4 @@
-import {Component, View} from 'angular2/core';
+import {Component, View, provide} from 'angular2/core';
 
 import {FormBuilder, ControlGroup, Validators} from 'angular2/common';
 
