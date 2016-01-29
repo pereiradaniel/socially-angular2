@@ -7,17 +7,18 @@ import {bootstrap} from 'angular2-meteor';
 import {PartiesForm} from 'client/parties-form/parties-form';
 
 @Component({
-	selector: 'app'
+    selector: 'app'
 })
 @View({
-	templateUrl: 'client/app.html',
-	directives: [PartiesForm]
+    templateUrl: 'client/app.html',
+    directives: [PartiesForm]
 })
 class Socially {
-	parties: Mongo.Cursor<Object>;
-	constructor () {
-		this.parties = Parties.find();
-	}
+    parties: Mongo.Cursor<Object>;
+
+    constructor () {
+        this.parties = Parties.find();
+    }
 }
 
 bootstrap(Socially);
